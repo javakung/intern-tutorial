@@ -40,7 +40,7 @@ public class MySearcher {
 	 */
 	public static void main(String[] args) throws IOException, ParseException {
 		// TODO Auto-generated method stub
-		 Path path = FileSystems.getDefault().getPath("index-jeban-products");
+		 Path path = FileSystems.getDefault().getPath("index-products");
 		 Directory dir = FSDirectory.open(path);
 		 Analyzer analyzer = new ThaiAnalyzer();
 		 IndexReader r = DirectoryReader.open(dir);

@@ -46,7 +46,7 @@ public class MyIndexer {
 	
 	public void index() throws IOException{
 		
-		 Path path = FileSystems.getDefault().getPath("index-jeban-products");
+		 Path path = FileSystems.getDefault().getPath("index-products");
 		 Directory dir = FSDirectory.open(path);
 		 
 		 /* set analyzer to analyze contents */
@@ -77,34 +77,7 @@ public class MyIndexer {
 		 
 		 sc.close();
 		 writer.close();
-		 
-		 
-//		 Field f = new Field("name", "ชัชวาล", TextField.TYPE_STORED);
-//		 doc.add(f);
-//		 Document doc = new Document();
-//		 doc.add(new Field("fname", "ชัชวาล", TextField.TYPE_STORED));
-//		 doc.add(new Field("lname", "สังคีตตระการ", TextField.TYPE_STORED));
-//		 doc.add(new Field("eid", "002482", StringField.TYPE_STORED));
-//		 doc.add(new Field("nick", "โคนัน", TextField.TYPE_STORED));
-//		 doc.add(new Field("organization", "nectec", TextField.TYPE_STORED));
-//		 doc.add(new Field("email", "chatchawal.san@nectec.or.th", TextField.TYPE_STORED));
-//		 doc.add(new Field("tel", "0813213210", StringField.TYPE_STORED));
-//		 
-//		 writer.addDocument(doc);
-//		 doc = null;
-//		 
-//		 doc = new Document();
-//		 doc.add(new Field("fname", "ชัชวาล", TextField.TYPE_STORED));
-//		 doc.add(new Field("lname", "สังคีต", TextField.TYPE_STORED));
-//		 doc.add(new Field("eid", "002485", StringField.TYPE_STORED));
-//		 doc.add(new Field("nick", "โคนัน", TextField.TYPE_STORED));
-//		 doc.add(new Field("organization", "nectec", TextField.TYPE_STORED));
-//		 doc.add(new Field("email", "conan@conan.in.th", TextField.TYPE_STORED));
-//		 doc.add(new Field("tel", "0813213210", StringField.TYPE_STORED));
-//		 
-//		 writer.addDocument(doc);
-
-		 
+		
 
 	}
 
